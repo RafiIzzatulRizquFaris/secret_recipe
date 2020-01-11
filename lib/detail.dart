@@ -10,11 +10,25 @@ class DetailScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail : $item'),
+        title: Text(
+            'Detail : $item',
+                style: TextStyle(
+            color: Colors.white
+        ),
+        ),
+        backgroundColor: Colors.black87,
         leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () => Navigator.pop(context, false)),
       ),
+      backgroundColor: Colors.black,
       body: Center(
-        child: Image.asset(item2),
+        child: Card(
+          elevation: 2.0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10.0))
+          ),
+          child: Image.asset(item2),
+          margin: EdgeInsets.only(right: 20.0, left: 20.0),
+        ),
       ),
     );
   }
