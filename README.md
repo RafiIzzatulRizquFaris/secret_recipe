@@ -2,6 +2,10 @@
 
 A new Flutter application.
 
+Demo :
+
+![Secret Recipe 2 Demo](demo_secrete_recipe_2.gif)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
