@@ -3,9 +3,6 @@ name: Building App
 # This workflow is triggered on pushes to the repository.
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master # on: push    # Default will running for every branch.
