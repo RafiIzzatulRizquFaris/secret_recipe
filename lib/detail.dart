@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget{
-  DetailScreen({Key key, this.item, this.item2, this.item3}) : super(key: key);
+  DetailScreen({Key? key, required this.item, required this.item2, required this.item3}) : super(key: key);
   final String item;
   final String item2;
   final String item3;

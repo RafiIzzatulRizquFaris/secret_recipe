@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:secret_recipe/detail_inet.dart';
 import 'package:secret_recipe/model/meals.dart';
-import 'package:secret_recipe/photo_hero_inet.dart';
+import 'package:secret_recipe/util/photo_hero_inet.dart';
 
 class DesertScreen extends StatefulWidget{
   @override

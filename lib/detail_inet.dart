@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreenInet extends StatelessWidget{
-  DetailScreenInet({Key key, this.item, this.item2, this.item3}) : super(key: key);
+  DetailScreenInet({Key? key, required this.item, required this.item2, required this.item3}) : super(key: key);
   final String item;
   final String item2;
   final String item3;
@@ -36,12 +36,12 @@ class DetailScreenInet extends StatelessWidget{
                       tag: item,
                       child: Image.network(
                         item2,
-                        loadingBuilder: (BuildContext context, Widget child, ImageChunkEvent loadingProgress){
+                        loadingBuilder: (BuildContext context, Widget child, ImageChunkEvent? loadingProgress){
                           if(loadingProgress == null) return child;
                           return Center(
                             child: CircularProgressIndicator(
                               value: loadingProgress.expectedTotalBytes != null ?
-                              loadingProgress.cumulativeBytesLoaded / loadingProgress.expectedTotalBytes : null,
+                              loadingProgress.cumulativeBytesLoaded / loadingProgress.expectedTotalBytes! : null,
                             ),
                           );
                         },

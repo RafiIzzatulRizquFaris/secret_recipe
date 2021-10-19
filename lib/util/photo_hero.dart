@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PhotoHero extends StatelessWidget{
-  const PhotoHero({Key key, this.tag, this.photo, this.onTap, this.width})
+  const PhotoHero({Key? key, required this.tag, required this.photo, required this.onTap, this.width})
       : super(key: key);
 
   final String tag, photo;
   final VoidCallback onTap;
-  final double width;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {

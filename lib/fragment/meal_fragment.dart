@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:secret_recipe/detail.dart';
 import 'package:secret_recipe/model/meals.dart';
-import 'package:secret_recipe/photo_hero.dart';
+import 'package:secret_recipe/util/photo_hero.dart';
 
 class MealScreen extends StatefulWidget{
   @override
